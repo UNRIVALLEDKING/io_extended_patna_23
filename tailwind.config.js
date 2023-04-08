@@ -14,7 +14,7 @@ module.exports = {
         googleRed: "#ea4335",
         googleBlue: "#4285f4",
         googleYellow: "#fabb04",
-        googleGreen: "0f9d57",
+        googleGreen: "#0f9d57",
       },
       fontFamily: {
         google: ["Plus Jakarta Sans", "sans-serif"],
