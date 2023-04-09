@@ -32,7 +32,7 @@ export default function Nav() {
   return (
     <>
       <div
-        className={`w-full fixed top-0 flex items-center justify-between p-2 border-b-[1px] z-50 ${
+        className={`w-full fixed top-0 flex items-center justify-between p-2 border-b-[1px] z-[999999999] ${
           scroll
             ? "bg-[rgba(0,0,0,0.6)] backdrop-blur-[4px]"
             : "bg-transparent backdrop-blur-0"
