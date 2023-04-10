@@ -10,7 +10,6 @@ export default function Nav() {
   const [toggle, setToggle] = useState(true);
 
   const handleScroll = function (e) {
-    // first prevent the default behavior
     e.preventDefault();
     // get the href and remove everything before the hash (#)
     var href = e.currentTarget.href;
