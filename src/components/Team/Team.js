@@ -18,9 +18,16 @@ export default function Team() {
       </h1>
       <hr className="w-1/5 mx-auto" />
       <div className="relative">
-        <div className="w-1/2 absolute top-0 right-0 z-0 opacity-50">
-          <Image src={Bg1} alt="io extended" />
-        </div>
+        <Image
+          className="w-1/2 absolute top-0 right-0 z-0 opacity-50"
+          src={Bg1}
+          alt="io extended"
+        />
+        <Image
+          className="w-1/2 absolute -top-8 rotate-90 -left-[20%] -z-10 opacity-50"
+          src={Bg2}
+          alt="io extended"
+        />
       </div>
       <div className="flex flex-row mt-[150px] flex-wrap z-[999999]">
         {TeamData.map((item, id) => (
