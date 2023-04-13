@@ -46,7 +46,12 @@ export default function Nav() {
         </div>
         <ul className="hidden lg:flex justify-evenly">
           {Menu.map((item, id) => (
-            <li className="mx-1" key={id}>
+            <li
+              className={`mx-1 py-2 ${
+                item.title === "Home" ? "bg-googleBlue rounded-full" : ""
+              }`}
+              key={id}
+            >
               <Link
                 onClick={handleScroll}
                 href={item.url}
@@ -70,7 +75,7 @@ export default function Nav() {
           <Image
             src={toggle ? MenuIcon : CloseIcon}
             alt="Menu"
-            className="animate-bounce w-8"
+            className="animate-bounce w-[70px]"
           />
           <div
             className={`fixed right-1 top-[3rem] p-2 rounded bg-[rgba(0,0,0,0.6)] backdrop-blur-[4px] z-50 ${
@@ -83,7 +88,12 @@ export default function Nav() {
               } flex flex-col justify-center item-end`}
             >
               {Menu.map((item, id) => (
-                <li className="mx-1 my-2" key={id}>
+                <li
+                  className={`mx-1 my-2 ${
+                    item.title === "Home" ? "bg-googleBlue rounded-full" : ""
+                  }`}
+                  key={id}
+                >
                   <Link
                     onClick={handleScroll}
                     href={item.url}

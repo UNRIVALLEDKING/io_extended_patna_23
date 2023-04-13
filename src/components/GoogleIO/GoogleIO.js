@@ -31,11 +31,11 @@ export default function GoogleIO() {
   return (
     <section id="google-io" className="text-center">
       <h2 className="text-3xl">What is Google IO Extended ?</h2>
-      <div className="flex gap-6 flex-col md:flex-row">
+      <div className="flex gap-6 flex-col md:flex-row px-4">
         <div className=" w-full md:w-1/2">
           <Image className="w-full h-100" src={crowd} alt="io extended" />
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2 px-4">
           <div>
             <Image className="w-full" src={io_extended} alt="io extended" />
           </div>
@@ -60,7 +60,7 @@ export default function GoogleIO() {
 
       <div className="flex my-2 gap-4 flex-col md:flex-row">
         {io_data.map((item, id) => (
-          <div className="w-full md:w-1/4 " key={id}>
+          <div className="w-full md:w-1/4 px-4" key={id}>
             <h1 className={`${item.color} py-3 rounded-full`}>
               {item.heading}
             </h1>
