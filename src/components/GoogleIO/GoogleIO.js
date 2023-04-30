@@ -29,17 +29,20 @@ export default function GoogleIO() {
     },
   ];
   return (
-    <section id="google-io" className="text-center">
-      <h2 className="text-3xl">What is Google IO Extended ?</h2>
+    <section
+      id="google-io"
+      className="text-center bg-googleIoBg bg-no-repeat bg-cover bg-center py-7"
+    >
+      <h2 className="text-3xl my-3">What is Google IO Extended ?</h2>
       <div className="flex gap-6 flex-col md:flex-row px-4">
-        <div className=" w-full md:w-1/2">
+        <div className=" w-full md:w-1/2 my-4">
           <Image className="w-full h-100" src={crowd} alt="io extended" />
         </div>
-        <div className="w-full md:w-1/2 px-4">
+        <div className="w-full md:w-1/2 px-4 my-4">
           <div>
             <Image className="w-full" src={io_extended} alt="io extended" />
           </div>
-          <div>
+          <div className="mt-4">
             <p>
               Google I/O extended 2023 – a place to meet developers and tech
               enthusiasts who are interested in Google products and APIs. This

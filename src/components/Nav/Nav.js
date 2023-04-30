@@ -11,10 +11,8 @@ export default function Nav() {
 
   const handleScroll = function (e) {
     e.preventDefault();
-    // get the href and remove everything before the hash (#)
     var href = e.currentTarget.href;
     var targetId = href.replace(/.*\#/, "");
-    // get the element by id and use scrollIntoView
     var elem = document.getElementById(targetId);
     elem === null || elem === void 0
       ? void 0
@@ -55,7 +53,7 @@ export default function Nav() {
               <Link
                 onClick={handleScroll}
                 href={item.url}
-                smooth
+                smooth="true"
                 scroll
                 className={`min-w-full text-white whitespace-nowrap ${
                   id === 0 ? "bg-primary" : ""
@@ -97,7 +95,7 @@ export default function Nav() {
                   <Link
                     onClick={handleScroll}
                     href={item.url}
-                    smooth
+                    smooth="true"
                     className={`min-w-full text-white whitespace-nowrap ${
                       id === 0 ? "bg-primary" : ""
                     } px-4 py-2 rounded-full hover:bg-secondary`}
