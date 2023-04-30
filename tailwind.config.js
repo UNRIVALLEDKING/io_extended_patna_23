@@ -28,6 +28,10 @@ module.exports = {
       lg: "1200px",
       xl: "1700px",
     },
+    backgroundImage: {
+      homeBg: "url('/homePageBg.svg')",
+      googleIoBg: "url('/WhatIsGoogleIO.svg')",
+    },
   },
   plugins: [],
 };
