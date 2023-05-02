@@ -5,35 +5,32 @@ import React, { useEffect, useState } from "react";
 import moment from "moment";
 
 export default function HomePage() {
-  const targetTime = moment("May 29 2023, 05:00:00 PM");
+  const targetTime = moment("June 29 2023, 10:00:00 AM");
   const [currentTime, setCurrentTime] = useState(moment());
   const timeBetween = moment.duration(targetTime.diff(currentTime));
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(moment());
-    }, 100000);
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 
   const monthsLeft = timeBetween.months();
   const daysLeft = timeBetween.days();
   const hoursLeft = timeBetween.hours();
+  const minsLeft = timeBetween.minutes();
   console.log("eventDate", targetTime._i);
   console.log("monthLeft", monthsLeft);
   console.log("DaysLeft", daysLeft);
   console.log("hoursLeft", hoursLeft);
+  console.log("minLeft", minsLeft);
   return (
     <section
       id="home"
       className="pt-24 h-[100vh] bg-homeBg bg-no-repeat bg-cover bg-center"
     >
       <div className="flex flex-col h-full items-center justify-center">
-        {/* <input
-          type="date"
-          className="text-black"
-          onChange={(e) => setTargetDate(e.target.value)}
-        /> */}
         <Image className="w-1/4" src={main_io} alt="google IO Patna" />
         <div className="flex items-center justify-center">
           <Image
@@ -50,49 +47,33 @@ export default function HomePage() {
             <div className="flex justify-evenly">
               <div className="w-1/3 h-48 border-white border-4 rounded-2xl p-5">
                 <div className="border-googleYellow border-4 rounded-2xl h-full flex items-center justify-center">
-                  <p className="text-8xl">
-                    {daysLeft.toString().length != 1
-                      ? daysLeft.toString()
-                      : "0"}
-                  </p>
+                  <p className="text-8xl">{monthsLeft}</p>
                 </div>
+                <p className="text-center text-5xl font-google mt-7">Months</p>
               </div>
               <div className="w-1/3 h-48 border-white border-4 rounded-2xl p-5">
                 <div className="border-googleRed border-4 rounded-2xl h-full flex items-center justify-center">
-                  <p className="text-8xl">
-                    {daysLeft.toString().length != 1
-                      ? daysLeft.toString()[1]
-                      : daysLeft}
-                  </p>
+                  <p className="text-8xl">{daysLeft}</p>
                 </div>
+                <p className="text-center text-5xl font-google mt-7">Days</p>
               </div>
             </div>
-            <h1 className="text-center text-5xl font-google mt-4">DAYS</h1>
           </div>
           <div className="w-1/2">
             <div className="flex justify-evenly">
               <div className="w-1/3 h-48 border-white border-4 rounded-2xl p-5">
                 <div className="border-googleBlue border-4 rounded-2xl h-full flex items-center justify-center">
-                  <p className="text-8xl">
-                    {hoursLeft.toString().length != 1
-                      ? hoursLeft.toString()[0]
-                      : "0"}
-                  </p>
+                  <p className="text-8xl">{hoursLeft}</p>
                 </div>
+                <p className="text-center text-5xl font-google mt-7">Hours</p>
               </div>
               <div className="w-1/3 h-48 border-white border-4 rounded-2xl p-5">
                 <div className="border-googleGreen border-4 rounded-2xl h-full flex items-center justify-center">
-                  <p className="text-8xl">
-                    {hoursLeft.toString().length != 1
-                      ? hoursLeft.toString()[1]
-                      : hoursLeft}
-                  </p>
+                  <p className="text-8xl">{minsLeft}</p>
                 </div>
+                <p className="text-center text-5xl font-google mt-7">Minutes</p>
               </div>
             </div>
-            <p className="text-center text-5xl font-google mt-4">
-              {monthsLeft ? "Month" : "Hours"}
-            </p>
           </div>
         </div>
       </div>
