@@ -5,6 +5,8 @@ import crowd from "./crowd.svg";
 import io_extended from "./io_extended_logo.svg";
 import main_io from "./io_extended.svg";
 import gdgLogo from "./GDG.svg";
+import leftCircles from "./leftButton.svg";
+import rightCircles from "./rightButton.svg";
 export {
   IOExtendedPatna,
   MenuIcon,
@@ -13,4 +15,6 @@ export {
   main_io,
   gdgLogo,
   crowd,
+  leftCircles,
+  rightCircles,
 };
