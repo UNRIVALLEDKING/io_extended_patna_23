@@ -1,3 +1,7 @@
 export default function Registrations() {
-  return <section className="registration">Registrations</section>;
+  return (
+    <section id="register" className="registration">
+      Registrations
+    </section>
+  );
 }

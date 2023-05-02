@@ -14,11 +14,15 @@ export default function Nav() {
     var href = e.currentTarget.href;
     var targetId = href.replace(/.*\#/, "");
     var elem = document.getElementById(targetId);
-    elem === null || elem === void 0
-      ? void 0
-      : elem.scrollIntoView({
-          behavior: "smooth",
-        });
+    if (targetId === "") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      elem === null || elem === void 0
+        ? void 0
+        : elem.scrollIntoView({
+            behavior: "smooth",
+          });
+    }
   };
 
   useEffect(() => {
@@ -36,11 +40,13 @@ export default function Nav() {
         }`}
       >
         <div className="flex items-center justify-start">
-          <Image
-            src={IOExtendedPatna}
-            alt="Google IO Extended Patna 2022"
-            className="w-[40%] sm:w-[40%] inline-block"
-          />
+          <Link href="#" onClick={handleScroll}>
+            <Image
+              src={IOExtendedPatna}
+              alt="Google IO Extended Patna 2022"
+              className="w-[60%] sm:w-[40%] inline-block"
+            />
+          </Link>
         </div>
         <ul className="hidden lg:flex justify-evenly">
           {Menu.map((item, id) => (
@@ -73,7 +79,7 @@ export default function Nav() {
           <Image
             src={toggle ? MenuIcon : CloseIcon}
             alt="Menu"
-            className="animate-bounce w-[70px]"
+            className="animate-bounce w-[120px]"
           />
           <div
             className={`fixed right-1 top-[3rem] p-2 rounded bg-[rgba(0,0,0,0.6)] backdrop-blur-[4px] z-50 ${
