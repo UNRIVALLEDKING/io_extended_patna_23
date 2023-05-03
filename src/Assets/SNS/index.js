@@ -5,6 +5,7 @@ import instaIcon from "./insta.svg";
 import linkedinIcon from "./linkedin.svg";
 import twitterIcon from "./twitter.svg";
 import youtubeIcon from "./youtube.svg";
+import telegramIcon from "./telegram.svg";
 
 export {
   githubIcon,
@@ -14,4 +15,5 @@ export {
   linkedinIcon,
   twitterIcon,
   youtubeIcon,
+  telegramIcon,
 };
