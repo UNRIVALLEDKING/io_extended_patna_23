@@ -76,7 +76,7 @@ export default function HomePage() {
                 <div className="border-googleYellow border-[3px] rounded-[23px] h-full flex items-center justify-center">
                   <p className="text-8xl md:text-[150px]">{monthsLeft}</p>
                 </div>
-                <p className="text-center text-2xl md:text-5xl fonft-google mt-7">
+                <p className="text-center text-2xl md:text-5xl fonft-google mt-3">
                   Months
                 </p>
               </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
                 <div className="border-googleRed border-[3px] rounded-[23px] h-full flex items-center justify-center">
                   <p className="text-8xl md:text-[150px]">{daysLeft}</p>
                 </div>
-                <p className="text-center text-2xl md:text-5xl font-google mt-7">
+                <p className="text-center text-2xl md:text-5xl font-google mt-3">
                   Days
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function HomePage() {
                 <div className="border-googleBlue border-[3px] rounded-[23px] h-full flex items-center justify-center">
                   <p className="text-8xl md:text-[150px]">{hoursLeft}</p>
                 </div>
-                <p className="text-center text-2xl md:text-5xl font-google mt-7">
+                <p className="text-center text-2xl md:text-5xl font-google mt-3">
                   Hours
                 </p>
               </div>
@@ -104,7 +104,7 @@ export default function HomePage() {
                 <div className="border-googleGreen border-[3px] rounded-[23px] h-full flex items-center justify-center">
                   <p className="text-8xl md:text-[150px]">{minsLeft}</p>
                 </div>
-                <p className="text-center text-2xl md:text-5xl font-google mt-7">
+                <p className="text-center text-2xl md:text-5xl font-google mt-3">
                   Minutes
                 </p>
               </div>
