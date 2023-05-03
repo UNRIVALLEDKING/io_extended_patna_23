@@ -31,7 +31,7 @@ export default function Team() {
                   <Image className="w-full" src={TeamTri} alt="io extended" />
                 </div>
                 <div
-                  className={`${item.color} -translate-y-[30%] p-2 rounded-t-full rounded-b-full pb-10 md:pb-24 min-h-[50vh] md:min-h-[70vh]`}
+                  className={`${item.color} -translate-y-[30%] p-2 rounded-t-full rounded-b-full pb-10 md:pb-24 min-h-[50vh] md:min-h-[40vh]`}
                 >
                   <Image
                     src={team1}
