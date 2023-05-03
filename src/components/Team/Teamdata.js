@@ -3,9 +3,9 @@ const { team1 } = require("@/Assets/team");
 const TeamData = [
   {
     id: 1,
-    name: "abc",
+    name: "Anurag Verma",
     image: team1,
-    team: "Technical Team",
+    team: "Community Lead",
     insta: "instagram.com",
     linkedin:
       "https://www.linkedin.com/help/linkedin/answer/a522735/find-your-linkedin-public-profile-url?lang=en",

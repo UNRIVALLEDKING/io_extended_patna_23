@@ -53,36 +53,36 @@ export default function HomePage() {
       id="home"
       className="pt-24 min-h-[100vh] bg-homeBg bg-no-repeat bg-cover bg-center"
     >
-      <Image
-        className="w-1/3 mx-auto md:w-1/4 hidden md:block"
-        src={main_io}
-        alt="google IO Patna"
-      />
-      <div className="flex items-center justify-center">
-        <Image
-          className="w-24 md:w-28 h-[80px] object-cover"
-          src={gdgLogo}
-          alt="GDG"
-        />
-        <h1 className="font-google text-xl md:text-2xl">
-          Google Developer Groups Patna
-        </h1>
-      </div>
       <div className="flex flex-col h-full items-center justify-center">
-        <div className="flex w-full gap-4 flex-col items-center md:flex-row justify-evenly mt-4 px-2 md:px-0">
+        <Image
+          className="w-1/3 mx-auto md:mt-[100px] md:w-1/4 hidden md:block"
+          src={main_io}
+          alt="google IO Patna"
+        />
+        <div className="flex items-center md:-ml-[40px] justify-center">
+          <Image
+            className="w-24 md:w-28 h-[80px] object-cover"
+            src={gdgLogo}
+            alt="GDG"
+          />
+          <h1 className="font-google text-xl md:text-2xl">
+            Google Developer Groups Patna
+          </h1>
+        </div>
+        <div className="flex w-full gap-4 flex-col items-center md:flex-row justify-evenly mt-4 px-2 md:px-10">
           <div className="w-full md:w-1/2">
-            <div className="flex gap-4 flex-row justify-evenly">
-              <div className="w-1/2 md:w-1/3 h-48 border-white border-[3px] rounded-[23px] p-2">
+            <div className="flex gap-4 md:gap-10 md:px-10 flex-row justify-evenly">
+              <div className="w-1/2  h-48 border-white border-[3px] rounded-[23px] p-2">
                 <div className="border-googleYellow border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                  <p className="text-4xl md:text-8xl">{monthsLeft}</p>
+                  <p className="text-8xl md:text-[150px]">{monthsLeft}</p>
                 </div>
-                <p className="text-center text-2xl md:text-5xl font-google mt-7">
+                <p className="text-center text-2xl md:text-5xl fonft-google mt-7">
                   Months
                 </p>
               </div>
-              <div className="w-1/2 md:w-1/3 h-48 border-white border-[3px] rounded-[23px] p-2">
+              <div className="w-1/2  h-48 border-white border-[3px] rounded-[23px] p-2">
                 <div className="border-googleRed border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                  <p className="text-4xl md:text-8xl">{daysLeft}</p>
+                  <p className="text-8xl md:text-[150px]">{daysLeft}</p>
                 </div>
                 <p className="text-center text-2xl md:text-5xl font-google mt-7">
                   Days
@@ -91,18 +91,18 @@ export default function HomePage() {
             </div>
           </div>
           <div className="w-full md:w-1/2 mt-10 md:mt-0">
-            <div className="flex gap-4 md:flex-row justify-evenly">
-              <div className="w-1/2 md:w-1/3 h-48 border-white border-[3px] rounded-[23px] p-2">
+            <div className="flex gap-4 md:gap-10 md:px-10 md:flex-row justify-evenly">
+              <div className="w-1/2  h-48 border-white border-[3px] rounded-[23px] p-2">
                 <div className="border-googleBlue border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                  <p className="text-4xl md:text-8xl">{hoursLeft}</p>
+                  <p className="text-8xl md:text-[150px]">{hoursLeft}</p>
                 </div>
                 <p className="text-center text-2xl md:text-5xl font-google mt-7">
                   Hours
                 </p>
               </div>
-              <div className="w-1/2 md:w-1/3 h-48 border-white border-[3px] rounded-[23px] p-2">
+              <div className="w-1/2  h-48 border-white border-[3px] rounded-[23px] p-2">
                 <div className="border-googleGreen border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                  <p className="text-4xl md:text-8xl">{minsLeft}</p>
+                  <p className="text-8xl md:text-[150px]">{minsLeft}</p>
                 </div>
                 <p className="text-center text-2xl md:text-5xl font-google mt-7">
                   Minutes
@@ -126,7 +126,7 @@ export default function HomePage() {
             onClick={handleScroll}
             className="registerButton px-8 py-3 md:mt-0"
           >
-            <Link href="#register" className="text-2xl">
+            <Link href="#register" className="text-2xl md:text-4xl">
               Register
             </Link>
           </button>
