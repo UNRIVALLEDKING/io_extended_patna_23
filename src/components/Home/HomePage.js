@@ -51,7 +51,7 @@ export default function HomePage() {
   return (
     <section
       id="home"
-      className="pt-24 min-h-[100vh] bg-homeBg bg-no-repeat bg-cover bg-center"
+      className="pt-16 md:pt-24 min-h-[100vh] bg-homeBg bg-no-repeat bg-cover bg-center"
     >
       <div className="flex flex-col h-full items-center justify-center">
         <Image
@@ -72,7 +72,7 @@ export default function HomePage() {
         <div className="flex w-full gap-4 flex-col items-center md:flex-row justify-evenly mt-4 px-2 md:px-10">
           <div className="w-full md:w-1/2">
             <div className="flex gap-4 md:gap-10 md:px-10 flex-row justify-evenly">
-              <div className="w-1/2  h-48 border-white border-[3px] rounded-[23px] p-2">
+              <div className="w-1/2 h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
                 <div className="border-googleYellow border-[3px] rounded-[23px] h-full flex items-center justify-center">
                   <p className="text-8xl md:text-[150px]">{monthsLeft}</p>
                 </div>
@@ -80,7 +80,7 @@ export default function HomePage() {
                   Months
                 </p>
               </div>
-              <div className="w-1/2  h-48 border-white border-[3px] rounded-[23px] p-2">
+              <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
                 <div className="border-googleRed border-[3px] rounded-[23px] h-full flex items-center justify-center">
                   <p className="text-8xl md:text-[150px]">{daysLeft}</p>
                 </div>
@@ -92,7 +92,7 @@ export default function HomePage() {
           </div>
           <div className="w-full md:w-1/2 mt-10 md:mt-0">
             <div className="flex gap-4 md:gap-10 md:px-10 md:flex-row justify-evenly">
-              <div className="w-1/2  h-48 border-white border-[3px] rounded-[23px] p-2">
+              <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
                 <div className="border-googleBlue border-[3px] rounded-[23px] h-full flex items-center justify-center">
                   <p className="text-8xl md:text-[150px]">{hoursLeft}</p>
                 </div>
@@ -100,7 +100,7 @@ export default function HomePage() {
                   Hours
                 </p>
               </div>
-              <div className="w-1/2  h-48 border-white border-[3px] rounded-[23px] p-2">
+              <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
                 <div className="border-googleGreen border-[3px] rounded-[23px] h-full flex items-center justify-center">
                   <p className="text-8xl md:text-[150px]">{minsLeft}</p>
                 </div>
