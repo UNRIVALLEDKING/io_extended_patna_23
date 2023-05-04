@@ -3,7 +3,6 @@ import { Bg1 } from "@/Assets/team";
 import Image from "next/image";
 import React from "react";
 import SNS from "../SNS/SNS";
-import Link from "next/link";
 
 export default function Footer() {
   return (
