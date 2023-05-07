@@ -1,4 +1,5 @@
 import { crowd, io_extended } from "@/Assets";
+import { CalenderIcon, NITP, VenueIcon } from "@/Assets/Venue";
 import Image from "next/image";
 
 export default function GoogleIO() {
@@ -70,6 +71,49 @@ export default function GoogleIO() {
             <p className="p-2">{item.para}</p>
           </div>
         ))}
+      </div>
+      <h1 className="mt-10 mb-2 text-center capitalize text-2xl z-[999999]">
+        Venue
+      </h1>
+      <hr className="w-1/2 md:w-1/5 mx-auto" />
+      <div className="flex my-2 gap-4 flex-col md:flex-row px-3 md:px-5 md:my-8 items-center">
+        <div className="md:w-1/2">
+          <Image className="w-full" src={NITP} alt="NIT Patna" />
+        </div>
+        <div className="md:w-1/2">
+          <h1 className="mt-10 mb-2 text-center capitalize text-2xl z-[999999]">
+            NIT Patna
+          </h1>
+          <hr className="w-1/2 md:w-1/5 mx-auto" />
+          <div className="flex items-center justify-around my-5 flex-col md:flex-row gap-4">
+            <a
+              href="https://goo.gl/maps/DP81Aj92LePQXvvCA"
+              target="_blank"
+              className="md:w-1/2 flex items-center flex-col"
+            >
+              <Image src={VenueIcon} alt="location icon" />
+              <h2>
+                National Institute of Technology Patna, <br />
+                Ashok Rajpath, Mahendru, Patna, Bihar (800005),
+              </h2>
+            </a>
+
+            <a
+              href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDRtdWdsNGo3aXFxZWVqNHN1dGZlNWo3ZTUgZ2RncGF0bmFAbQ&tmsrc=gdgpatna%40gmail.com"
+              target="_blank"
+              className="md:w-1/2 flex items-center flex-col py-4"
+            >
+              <Image src={CalenderIcon} alt="Save the Date icon" />
+              <h2>29th July 2023, 10 AM</h2>
+              <button
+                type="button"
+                className="bg-black backdrop-blur-xl text-white px-3 py-2 rounded-xl"
+              >
+                Add to Calender
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
