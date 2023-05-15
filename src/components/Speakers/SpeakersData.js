@@ -1,0 +1,73 @@
+const { team1 } = require("@/Assets/team");
+
+const speakersData = [
+  {
+    id: 1,
+    name: "Anurag Verma",
+    image: team1,
+    team: "Community Lead",
+    insta: "instagram.com",
+    linkedin:
+      "https://www.linkedin.com/help/linkedin/answer/a522735/find-your-linkedin-public-profile-url?lang=en",
+    twitter: "twitter.com",
+    github: "github.com",
+    color: "bg-googleBlue",
+  },
+  {
+    id: 2,
+    name: "Barkha Agarwal",
+    image: team1,
+    team: "Co-Organizer",
+    insta: "instagram.com",
+    linkedin: "linkedin.com",
+    twitter: "twitter.com",
+    github: "github.com",
+    color: "bg-googleYellow",
+  },
+  {
+    id: 3,
+    name: "Shekhar Sahani",
+    image: team1,
+    team: "Technical Lead",
+    insta: "instagram.com",
+    linkedin: "linkedin.com",
+    twitter: "twitter.com",
+    github: "github.com",
+    color: "bg-googleGreen",
+  },
+  {
+    id: 4,
+    name: "Aditya Kumar",
+    image: team1,
+    team: "Technical Lead",
+    insta: "instagram.com",
+    linkedin: "linkedin.com",
+    twitter: "twitter.com",
+    github: "github.com",
+    color: "bg-googleRed",
+  },
+  {
+    id: 5,
+    name: "Hritik Kumar",
+    image: team1,
+    team: "Design Lead",
+    insta: "instagram.com",
+    linkedin: "linkedin.com",
+    twitter: "twitter.com",
+    github: "github.com",
+    color: "bg-googleRed",
+  },
+  {
+    id: 6,
+    name: "Priyanshu Sinha",
+    image: team1,
+    team: "Design Lead",
+    insta: "instagram.com",
+    linkedin: "linkedin.com",
+    twitter: "twitter.com",
+    github: "github.com",
+    color: "bg-googleRed",
+  },
+];
+
+export { speakersData };
