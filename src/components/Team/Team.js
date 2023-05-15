@@ -1,80 +1,57 @@
 import { Bg1, Bg2, TeamTri, team1 } from "@/Assets/team";
 import Image from "next/image";
-import { TeamData } from "./Teamdata";
-import { instaIcon, linkedinIcon, twitterIcon } from "@/Assets/SNS";
+import {
+  DesignTeam,
+  LeadList,
+  OperationTeam,
+  TeamData,
+  TechTeam,
+} from "./Teamdata";
+import { githubIcon, instaIcon, linkedinIcon, twitterIcon } from "@/Assets/SNS";
+import TeamCard from "./TeamCard";
 
 export default function Team() {
   return (
     <section id="team" className="relative">
-      <h1 className="mt-10 mb-2 text-center capitalize text-2xl z-[999999]">
-        Our Team
-      </h1>
-      <hr className="w-1/2 md:w-1/5 mx-auto" />
-      <div className="relative">
-        <Image
-          className="w-1/2 absolute top-0 right-0 z-0 opacity-50"
-          src={Bg1}
-          alt="io extended"
-        />
-        <Image
-          className="w-1/2 absolute -top-8 rotate-90 -left-[20%] -z-10 opacity-50"
-          src={Bg2}
-          alt="io extended"
-        />
-      </div>
-      <div className="flex flex-row mt-[150px] flex-wrap z-[999999]">
-        {TeamData.map((item, id) => (
-          <div className="w-full md:w-1/4 py-4 z-[999999]" key={id}>
-            <div className="flex flex-row items-start my-10 justify-center">
-              <div className={`w-2/3 bg-transparent text-center relative`}>
-                <div className="w-[105%] -translate-x-[2.5%] absolute bottom-6">
-                  <Image className="w-full" src={TeamTri} alt="io extended" />
-                </div>
-                <div
-                  className={`${item.color} -translate-y-[30%] p-2 rounded-t-full rounded-b-full pb-10 md:pb-24 min-h-[50vh] md:min-h-[40vh]`}
-                >
-                  <Image
-                    src={team1}
-                    alt="io extended"
-                    className="w-full rounded-full aspect-square border-black border-2 object-cover"
-                  />
-                  <h2 className="text-3xl">{item.name}</h2>
-                  <p className="text-lg">{item.team}</p>
-                </div>
+      {/* New Card */}
+
+      <h2 className="text-5xl mt-10 text-center">Meet Our Team</h2>
+      <div className="flex items-center w-screen mt-7">
+        <div className="container px-8 flex flex-wrap justify-center ml-auto mr-auto gap-8 items-start">
+          {LeadList.map((item, id) => (
+            <div
+              key={id}
+              className="flex flex-col justify-center items-center w-3/4 sm:w-2/5 md:w-3/5 lg:w-2/12"
+            >
+              {console.log("iten", item)}
+              <div
+                className="relative flex justify-center items-center bg-cover bg-no-repeat w-full rounded-full"
+                style={{ backgroundImage: `url(${item.image.src})` }}
+              >
+                <Image
+                  className="rounded-full aspect-square w-full object-cover z-30"
+                  src={item.frame}
+                  alt={item.name}
+                />
               </div>
-              <div className="px-3 gap-2 flex flex-col">
-                <div className="border-white rounded-full p-3 border-2">
-                  <a href={item.linkedin} target="_blank" className="w-[50px]">
-                    <Image
-                      src={linkedinIcon}
-                      className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
-                      alt="io extended"
-                    />
-                  </a>
-                </div>
-                <div className="border-white rounded-full p-3 border-2">
-                  <a href={item.linkedin} target="_blank" className="w-[50px]">
-                    <Image
-                      src={instaIcon}
-                      className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
-                      alt="io extended"
-                    />
-                  </a>
-                </div>
-                <div className="border-white rounded-full p-3 border-2">
-                  <a href={item.linkedin} target="_blank" className="w-[50px]">
-                    <Image
-                      src={twitterIcon}
-                      className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
-                      alt="io extended"
-                    />
-                  </a>
-                </div>
+              <div className="mt-3 text-center cursor-default">
+                <h3 className="text-xl">{item.name}</h3>
+                <h4 className="text-gray-400">{item.desc}</h4>
+              </div>
+              <div className="flex flex-row justify-evenly w-full mt-2">
+                {/* Social media icons */}
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+      {/* Tech Team */}
+      <TeamCard data={TechTeam} title="Tech Team" />
+
+      {/* Operation Lead */}
+      <TeamCard data={OperationTeam} title="Operation Team" />
+      {/* Design Lead */}
+      <TeamCard data={DesignTeam} title="Design Team" />
     </section>
   );
 }
