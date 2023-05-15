@@ -30,10 +30,7 @@ export default function GoogleIO() {
     },
   ];
   return (
-    <section
-      id="google-io"
-      className="text-center bg-googleIoBg bg-no-repeat bg-cover bg-center py-7"
-    >
+    <section id="google-io" className="text-center py-7">
       <h2 className="text-3xl my-3">What is Google IO Extended ?</h2>
       <div className="flex gap-6 flex-col md:flex-row px-4">
         <div className=" w-full md:w-1/2 my-4">

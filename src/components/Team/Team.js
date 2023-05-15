@@ -12,7 +12,7 @@ import TeamCard from "./TeamCard";
 
 export default function Team() {
   return (
-    <section id="team" className="relative">
+    <section id="team" className="relative text-center">
       {/* New Card */}
 
       <h2 className="text-5xl mt-10 text-center">Meet Our Team</h2>

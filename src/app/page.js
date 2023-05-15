@@ -10,7 +10,7 @@ import Registrations from "@/components/Registrations/Registrations";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-googleIoBg bg-repeat bg-center">
       <HomePage />
       <GoogleIO />
       <Speakers />
