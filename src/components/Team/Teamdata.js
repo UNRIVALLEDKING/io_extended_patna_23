@@ -1,73 +1,79 @@
-const { team1 } = require("@/Assets/team");
+import { Blue, Green, Red, Yellow } from "@/Assets/Frames";
+import {
+  Aditya,
+  AdityaDesign,
+  AnuragVerma,
+  BarkhaAgarwal,
+  Hritik,
+  Priyanshu,
+  Shekhar,
+} from "@/Assets/TeamMembers";
 
-const TeamData = [
+export const LeadList = [
   {
-    id: 1,
     name: "Anurag Verma",
-    image: team1,
-    team: "Community Lead",
-    insta: "instagram.com",
-    linkedin:
-      "https://www.linkedin.com/help/linkedin/answer/a522735/find-your-linkedin-public-profile-url?lang=en",
-    twitter: "twitter.com",
-    github: "github.com",
-    color: "bg-googleBlue",
+    desc: "Organizer",
+    image: AnuragVerma,
+    frame: Red,
+    linkedin: "https://www.linkedin.com/in/anuragver/",
+    twitter: "https://twitter.com/anuragceg",
   },
   {
-    id: 2,
     name: "Barkha Agarwal",
-    image: team1,
-    team: "Co-Organizer",
-    insta: "instagram.com",
-    linkedin: "linkedin.com",
-    twitter: "twitter.com",
-    github: "github.com",
-    color: "bg-googleYellow",
-  },
-  {
-    id: 3,
-    name: "Shekhar Sahani",
-    image: team1,
-    team: "Technical Lead",
-    insta: "instagram.com",
-    linkedin: "linkedin.com",
-    twitter: "twitter.com",
-    github: "github.com",
-    color: "bg-googleGreen",
-  },
-  {
-    id: 4,
-    name: "Aditya Kumar",
-    image: team1,
-    team: "Technical Lead",
-    insta: "instagram.com",
-    linkedin: "linkedin.com",
-    twitter: "twitter.com",
-    github: "github.com",
-    color: "bg-googleRed",
-  },
-  {
-    id: 5,
-    name: "Hritik Kumar",
-    image: team1,
-    team: "Design Lead",
-    insta: "instagram.com",
-    linkedin: "linkedin.com",
-    twitter: "twitter.com",
-    github: "github.com",
-    color: "bg-googleRed",
-  },
-  {
-    id: 6,
-    name: "Priyanshu Sinha",
-    image: team1,
-    team: "Design Lead",
-    insta: "instagram.com",
-    linkedin: "linkedin.com",
-    twitter: "twitter.com",
-    github: "github.com",
-    color: "bg-googleRed",
+    desc: "Co-Organizer",
+    frame: Blue,
+    image: BarkhaAgarwal,
   },
 ];
 
-export { TeamData };
+const TechTeam = [
+  {
+    name: "Shekhar Sahani",
+    desc: "Technical Lead",
+    image: Shekhar,
+    frame: Red,
+    linkedin: "https://www.linkedin.com/in/shekharsahani/",
+    github: "https://github.com/shekhar-sahani",
+    twitter: "https://twitter.com/Shekhar44007302",
+  },
+  {
+    name: "Aditya Kumar",
+    desc: "Technical Lead",
+    image: Aditya,
+    frame: Blue,
+    linkedin: "https://www.linkedin.com/in/unrivalledking/",
+    github: "https://github.com/UNRIVALLEDKING",
+    twitter: "https://twitter.com/UNRIVALLED_KING",
+  },
+];
+const OperationTeam = [
+  {
+    name: "Priyanshu Sinha",
+    desc: "Operation Co-Lead",
+    image: Priyanshu,
+    frame: Red,
+    linkedin: "https://www.linkedin.com/in/priyanshusinha03/",
+    twitter: "https://twitter.com/priyanshu0312",
+  },
+];
+const DesignTeam = [
+  {
+    name: "Hritik Kumar",
+    desc: "Design Lead",
+    image: Hritik,
+    frame: Red,
+    linkedin: "https://www.linkedin.com/in/hritikshiva/",
+    twitter: "",
+  },
+  {
+    name: "Aditya Kumar",
+    desc: "Design Team",
+    image: AdityaDesign,
+    frame: Yellow,
+    linkedin: "https://www.linkedin.com/in/adityagit/",
+    website: "https://www.behance.net/igraphixstudio/",
+    github: "https://github.com/rootaditya",
+  },
+];
+
+export { TechTeam, OperationTeam as OperationTeam, DesignTeam as DesignTeam };
