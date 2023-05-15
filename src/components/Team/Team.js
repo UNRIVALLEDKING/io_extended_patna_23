@@ -23,7 +23,6 @@ export default function Team() {
               key={id}
               className="flex flex-col justify-center items-center w-3/4 sm:w-2/5 md:w-3/5 lg:w-2/12"
             >
-              {console.log("iten", item)}
               <div
                 className="relative flex justify-center items-center bg-cover bg-no-repeat w-full rounded-full"
                 style={{ backgroundImage: `url(${item.image.src})` }}
@@ -39,7 +38,45 @@ export default function Team() {
                 <h4 className="text-gray-400">{item.desc}</h4>
               </div>
               <div className="flex flex-row justify-evenly w-full mt-2">
-                {/* Social media icons */}
+                <div className="flex flex-row justify-evenly w-full mt-2">
+                  {item.github ? (
+                    <a href={item.github} target="_blank" rel="noreferrer">
+                      <Image
+                        src={githubIcon}
+                        alt="github"
+                        className="w-6 hover:-translate-y-1 transition-all ease-in-out"
+                      />
+                    </a>
+                  ) : (
+                    <></>
+                  )}
+                  {item.linkedin ? (
+                    <>
+                      <a href={item.linkedin} target="_blank" rel="noreferrer">
+                        <Image
+                          src={linkedinIcon}
+                          alt="linkedin"
+                          className="w-6 hover:-translate-y-1 transition-all ease-in-out"
+                        />
+                      </a>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+                  {item.twitter ? (
+                    <>
+                      <a href={item.twitter} target="_blank" rel="noreferrer">
+                        <Image
+                          src={twitterIcon}
+                          alt="twitter"
+                          className="w-6 hover:-translate-y-1 transition-all ease-in-out"
+                        />
+                      </a>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+                </div>
               </div>
             </div>
           ))}
