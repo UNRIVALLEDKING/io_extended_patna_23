@@ -30,7 +30,7 @@ module.exports = {
     },
     backgroundImage: {
       homeBg: "url('/homePageBg.svg')",
-      googleIoBg: "url('/WhatIsGoogleIO.svg')",
+      googleIoBg: "url('/WhatIsGoogleIO.png')",
     },
   },
   plugins: [],
