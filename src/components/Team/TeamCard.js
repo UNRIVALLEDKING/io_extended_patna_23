@@ -11,7 +11,7 @@ export default function TeamCard({ data, title }) {
           {data.map((item, id) => (
             <div
               key={id}
-              className="flex flex-col justify-center items-center w-[75%] sm:w-2/5 md:w-3/5  lg:w-2/12"
+              className="flex flex-col justify-center items-center w-[75%] sm:w-2/5 md:w-3/5  lg:w-2/12 z-[9999999]"
             >
               <div
                 className="relative flex justify-center items-center !bg-contain w-full !z-[40] rounded-full"
