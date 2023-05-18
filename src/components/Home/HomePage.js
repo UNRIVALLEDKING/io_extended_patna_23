@@ -6,7 +6,7 @@ import moment from "moment";
 import Link from "next/link";
 
 export default function HomePage() {
-  const targetTime = moment("2023-06-29T10:00:00Z");
+  const targetTime = moment("2023-07-30T10:00:00Z");
   const [currentTime, setCurrentTime] = useState(moment());
   const timeBetween = moment.duration(targetTime.diff(currentTime));
 
