@@ -6,14 +6,12 @@ import SNS from "../SNS/SNS";
 
 export default function Footer() {
   return (
-    <section id="footer" className="pt-24 bg-googleIoBg bg-repeat bg-center">
-      <div className="relative">
-        <Image
-          className="w-1/2 absolute -bottom-[150px] md:bottom-0 right-0 z-0 opacity-30"
-          src={Bg1}
-          alt="io extended"
-        />
-      </div>
+    <section id="footer" className="pt-24 relative">
+      <Image
+        className="w-1/2 absolute bottom-0 right-0 z-0 opacity-30"
+        src={Bg1}
+        alt="io extended"
+      />
       <div className="flex flex-col h-full items-center justify-center mb-[30px]">
         <div className="flex items-center justify-center z-[999999]">
           <Image
