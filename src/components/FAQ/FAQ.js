@@ -7,8 +7,8 @@ const FAQ = () => {
       <div className="z-[999999] container mx-auto">
         <h2 className="text-2xl font-bold mb-4">FAQ & Agenda</h2>
         <div className="z-[999999] grid grid-cols-1 md:grid-cols-2 gap-6">
-          {faqData.map((faq) => (
-            <div key={faq.id} className="z-[999999] p-4 shadow">
+          {faqData.map((faq, id) => (
+            <div key={id} className="z-[999999] p-4 shadow">
               <details className="z-[999999]">
                 <summary className="text-lg font-medium mb-2">
                   {faq.question}
