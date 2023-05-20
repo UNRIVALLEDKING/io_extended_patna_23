@@ -71,6 +71,7 @@ const DesignTeam = [
     desc: "Design Team",
     image: Shruti,
     frame: Blue,
+    linkedin: "https://www.linkedin.com/in/shruti-agrawal-7bb416243/",
   },
   {
     name: "Aditya Kumar",
