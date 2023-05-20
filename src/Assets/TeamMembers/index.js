@@ -5,6 +5,7 @@ import Shekhar from "./Shekhar.jpeg";
 import Hritik from "./Hritik.jpeg";
 import Priyanshu from "./Priyanshu.jpeg";
 import AdityaDesign from "./AdityaDesign.jpeg";
+import Shruti from "./Shruti.jpg";
 
 export {
   Aditya,
@@ -14,4 +15,5 @@ export {
   Hritik,
   Priyanshu,
   AdityaDesign,
+  Shruti,
 };
