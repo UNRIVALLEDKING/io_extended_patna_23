@@ -6,21 +6,10 @@ import moment from "moment";
 import Link from "next/link";
 
 export default function HomePage() {
-  const targetTime = moment("2023-06-29T10:00:00Z");
+  const targetTime = moment("2023-07-30T10:00:00");
+
   const [currentTime, setCurrentTime] = useState(moment());
   const timeBetween = moment.duration(targetTime.diff(currentTime));
-
-  // const handleScroll = function (e) {
-  //   e.preventDefault();
-  //   var href = e.currentTarget.href;
-  //   var targetId = href.replace(/.*\#/, "");
-  //   var elem = document.getElementById(targetId);
-  //   elem === null || elem === void 0
-  //     ? void 0
-  //     : elem.scrollIntoView({
-  //         behavior: "smooth",
-  //       });
-  // };
 
   const handleScroll = function (e) {
     e.preventDefault();
@@ -47,6 +36,7 @@ export default function HomePage() {
   const daysLeft = timeBetween.days();
   const hoursLeft = timeBetween.hours();
   const minsLeft = timeBetween.minutes();
+  const secLeft = timeBetween.seconds();
 
   return (
     <section

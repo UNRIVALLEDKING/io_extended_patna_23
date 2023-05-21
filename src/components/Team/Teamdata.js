@@ -7,6 +7,7 @@ import {
   Hritik,
   Priyanshu,
   Shekhar,
+  Shruti,
 } from "@/Assets/TeamMembers";
 
 export const LeadList = [
@@ -64,6 +65,13 @@ const DesignTeam = [
     frame: Red,
     linkedin: "https://www.linkedin.com/in/hritikshiva/",
     twitter: "",
+  },
+  {
+    name: "Shruti Agrawal",
+    desc: "Design Team",
+    image: Shruti,
+    frame: Blue,
+    linkedin: "https://www.linkedin.com/in/shruti-agrawal-7bb416243/",
   },
   {
     name: "Aditya Kumar",
