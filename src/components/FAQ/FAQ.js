@@ -1,9 +1,8 @@
-import React from "react";
-import faqData from "./faqData.json";
+import faqData from './faqData.json';
 
-const FAQ = () => {
+export default function FAQ() {
   return (
-    <section id="faq" className="z-[999999] py-8">
+<section id="faq" className="z-[999999] py-8">
       <div className="z-[999999] container mx-auto">
         <h2 className="text-2xl font-bold mb-4">FAQ & Agenda</h2>
         <div className="z-[999999] grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -20,7 +19,6 @@ const FAQ = () => {
         </div>
       </div>
     </section>
+    
   );
-};
-
-export default FAQ;
+}
