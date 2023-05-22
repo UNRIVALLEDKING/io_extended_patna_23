@@ -9,19 +9,21 @@ export default function Nav() {
   const [scroll, setScroll] = useState(false);
   const [toggle, setToggle] = useState(true);
 
-  const handleScroll = function (e) {
+  const handleScroll = function (e, title) {
     e.preventDefault();
-    var href = e.currentTarget.href;
-    var targetId = href.replace(/.*\#/, "");
-    var elem = document.getElementById(targetId);
-    if (targetId === "") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      elem === null || elem === void 0
-        ? void 0
-        : elem.scrollIntoView({
-            behavior: "smooth",
-          });
+    if (title !== "Team") {
+      var href = e.currentTarget.href;
+      var targetId = href.replace(/.*\#/, "");
+      var elem = document.getElementById(targetId);
+      if (targetId === "") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else {
+        elem === null || elem === void 0
+          ? void 0
+          : elem.scrollIntoView({
+              behavior: "smooth",
+            });
+      }
     }
   };
 
@@ -57,7 +59,7 @@ export default function Nav() {
               key={id}
             >
               <Link
-                onClick={handleScroll}
+                onClick={() => handleScroll(item.title)}
                 href={item.url}
                 smooth="true"
                 scroll
@@ -99,7 +101,7 @@ export default function Nav() {
                   key={id}
                 >
                   <Link
-                    onClick={handleScroll}
+                    onClick={() => handleScroll(item.title)}
                     href={item.url}
                     smooth="true"
                     className={`min-w-full text-white whitespace-nowrap ${

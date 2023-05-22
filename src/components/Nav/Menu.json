@@ -1,34 +1,34 @@
 [
   {
     "title": "Home",
-    "url": "#home"
+    "url": "/#home"
   },
   {
     "title": "Why I/O?",
-    "url": "#google-io"
+    "url": "/#google-io"
   },
   {
     "title": "Speakers",
-    "url": "#speakers"
+    "url": "/#speakers"
   },
   {
     "title": "Sponsors",
-    "url": "#sponsors"
+    "url": "/#sponsors"
   },
   {
     "title": "Partners",
-    "url": "#partners"
+    "url": "/#partners"
   },
   {
     "title": "Agenda",
-    "url": "#agenda"
+    "url": "/#agenda"
   },
   {
     "title": "Team",
-    "url": "#team"
+    "url": "/team"
   },
   {
     "title": "FAQ",
-    "url": "#faq"
+    "url": "/#faq"
   }
 ]
