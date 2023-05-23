@@ -84,11 +84,10 @@ export default function Team() {
       </div>
       {/* Tech Team */}
       <TeamCard data={TechTeam} title="Tech Team" />
-
-      {/* Operation Lead */}
-      <TeamCard data={OperationTeam} title="Operation Team" />
       {/* Design Lead */}
       <TeamCard data={DesignTeam} title="Design Team" />
+      {/* Operation Lead */}
+      <TeamCard data={OperationTeam} title="Operation Team" />
     </section>
   );
 }
