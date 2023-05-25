@@ -1,15 +1,15 @@
 [
   {
-    "question": "What is the google io ?",
-    "answer": "The event schedule will be available on the official website."
+    "question": "When is the event going to take place?",
+    "answer": "The event will take place in 30th of July."
   },
   {
-    "question": "How can I register for the event?",
-    "answer": "You can register for the event by visiting our registration page and filling out the form."
+    "question": "Are there any prerequisites for attending the event?",
+    "answer": "There are no specific prerequisites for attending the event. It is open to all tech enthusiasts, regardless of their level of expertise or background."
   },
   {
-    "question": "Is there an entry fee for attending the event?",
-    "answer": "Yes, There is a small fee for attending the event."
+    "question": "Can I bring a guest to the event?",
+    "answer": "Yes, you are welcome to bring a guest. However, we kindly request that each attendee registers separately so that we can have an accurate headcount."
   },
   {
     "question": "Can I bring a guest with me?",
