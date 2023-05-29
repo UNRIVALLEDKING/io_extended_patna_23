@@ -10,7 +10,7 @@ export default function FAQ() {
             <summary className="text-lg font-medium mb-2">
               {faq.question}
             </summary>
-            {/* <p className="mt-2">{faq.answer}</p> */}
+            <p className="mt-2">{faq.answer}</p>
           </details>
         ))}
       </div>
