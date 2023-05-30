@@ -7,7 +7,7 @@ export default function Registrations() {
       <hr className="w-1/2 md:w-1/5 mx-auto" />
       <div
         className="flex flex-row 
-      mt-[150px] mt-0
+      md:mt-[150px]
        flex-wrap z-[999999] md:min-h-[50vh] justify-center items-center"
       >
         <p className="md:w-2/3 w-[90%] text-center md:text-2xl">
