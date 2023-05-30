@@ -9,24 +9,24 @@ export default function Sponsors() {
       url: "https://gdg.community.dev/",
       border: "googleRed",
     },
-    {
-      id: 0,
-      title: "Google Developer Groups",
-      url: "https://gdg.community.dev/",
-      border: "googleBlue",
-    },
-    {
-      id: 0,
-      title: "Google Developer Groups",
-      url: "https://gdg.community.dev/",
-      border: "googleGreen",
-    },
-    {
-      id: 0,
-      title: "Google Developer Groups",
-      url: "https://gdg.community.dev/",
-      border: "googleYellow",
-    },
+    // {
+    //   id: 0,
+    //   title: "Google Developer Groups",
+    //   url: "https://gdg.community.dev/",
+    //   border: "googleBlue",
+    // },
+    // {
+    //   id: 0,
+    //   title: "Google Developer Groups",
+    //   url: "https://gdg.community.dev/",
+    //   border: "googleGreen",
+    // },
+    // {
+    //   id: 0,
+    //   title: "Google Developer Groups",
+    //   url: "https://gdg.community.dev/",
+    //   border: "googleYellow",
+    // },
   ];
   return (
     <section id="sponsors">
