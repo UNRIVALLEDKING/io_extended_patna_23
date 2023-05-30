@@ -12,18 +12,17 @@ export default function Speakers() {
       <hr className="w-1/2 md:w-1/5 mx-auto" />
       <div className="relative">
         <Image
-          className="w-1/2 absolute top-0 right-0 z-0 opacity-50"
-          src={Bg1}
-          alt="io extended"
-        />
-        <Image
           className="w-1/2 absolute -top-8 rotate-90 -left-[20%] -z-10 opacity-50"
           src={Bg2}
           alt="io extended"
         />
       </div>
-      <div className="flex flex-row mt-[150px] flex-wrap z-[999999]">
-        {speakersData.map((item, id) => (
+      <div
+        className="flex flex-row 
+      mt-[150px] mt-0
+       flex-wrap z-[999999] min-h-[50vh] justify-center items-center"
+      >
+        {/* {speakersData.map((item, id) => (
           <div className="w-full md:w-1/4 py-4 md:py-10 z-[999999]" key={id}>
             <div className="flex flex-row items-start my-10 justify-center">
               <div className={`w-2/3 bg-transparent text-center relative`}>
@@ -73,7 +72,19 @@ export default function Speakers() {
               </div>
             </div>
           </div>
-        ))}
+        ))} */}
+
+        <p className="md:w-2/3 w-[90%] text-center text-2xl">
+          Brace yourselves for an epic lineup of tech visionaries and industry
+          leaders at Google I/O Extended Patna! We&apos;re currently fine-tuning
+          the final details and preparing to unveil the star-studded roster of
+          speakers who will take the stage. Get ready to be inspired, informed,
+          and blown away by their expertise and insights. Keep an eye on our
+          website as we&apos;ll be announcing the lineup very soon! Stay tuned
+          for an unforgettable experience that will ignite your passion for all
+          things tech. It&apos;s time to level up! 💫 #GoogleIOExtendedPatna
+          #SpeakersRevealComingSoon #TechEnthusiastsUnite
+        </p>
       </div>
     </section>
   );
