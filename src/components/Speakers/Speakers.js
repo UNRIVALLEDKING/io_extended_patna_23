@@ -20,7 +20,7 @@ export default function Speakers() {
       <div
         className="flex flex-row 
       mt-[150px] mt-0
-       flex-wrap z-[999999] min-h-[50vh] justify-center items-center"
+       flex-wrap z-[999999] md:min-h-[50vh] justify-center items-center"
       >
         {/* {speakersData.map((item, id) => (
           <div className="w-full md:w-1/4 py-4 md:py-10 z-[999999]" key={id}>
