@@ -24,8 +24,8 @@ export default function GoogleIO() {
     },
     {
       id: 4,
-      heading: "heading 4",
-      para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptas ducimus nisi reprehenderit, iusto dolores provident molestias voluptate corporis. Debitis culpa impedit minus, necessitatibus quibusdam nisi quae repudiandae asperiores dicta.",
+      heading: "Swags & Refreshments",
+      para: "A long conference with empty stomach is just not fun! GDG Patna is making sure that your visit will surely leave a taste of this historic city on your mind. As a souvenir for our great journey, you'll also be getting some cool goodies and google badges.",
       color: "bg-googleYellow",
     },
   ];
@@ -96,12 +96,12 @@ export default function GoogleIO() {
             </a>
 
             <a
-              href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDRtdWdsNGo3aXFxZWVqNHN1dGZlNWo3ZTUgZ2RncGF0bmFAbQ&tmsrc=gdgpatna%40gmail.com"
+              href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGFlMzgxb3ZiYjJ1bnZqMWJwNTR1bnIwcDIgYWRpdHlha3VtYXJ1bnJpdmFsbGVka2luZzFAbQ&tmsrc=adityakumarunrivalledking1%40gmail.com"
               target="_blank"
               className="md:w-1/2 flex items-center flex-col py-4"
             >
               <Image src={CalenderIcon} alt="Save the Date icon" />
-              <h2>29th July 2023, 10 AM</h2>
+              <h2>30th July 2023, 10 AM</h2>
               <button
                 type="button"
                 className="bg-black backdrop-blur-xl text-white px-3 py-2 rounded-xl"
