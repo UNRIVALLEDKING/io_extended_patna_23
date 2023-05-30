@@ -10,7 +10,7 @@ export default function Registrations() {
       mt-[150px] mt-0
        flex-wrap z-[999999] min-h-[50vh] justify-center items-center"
       >
-        <p className="md:w-2/3 w-[90%] text-center text-2xl">
+        <p className="md:w-2/3 w-[90%] text-center md:text-2xl">
           Attention tech enthusiasts and innovators! The countdown is on for the
           highly anticipated Google I/O Extended Patna event, and we&apos;re
           thrilled to announce that registration will be opening soon! Get ready

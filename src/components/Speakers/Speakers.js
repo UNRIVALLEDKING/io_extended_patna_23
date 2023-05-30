@@ -74,7 +74,7 @@ export default function Speakers() {
           </div>
         ))} */}
 
-        <p className="md:w-2/3 w-[90%] text-center text-2xl">
+        <p className="md:w-2/3 w-[90%] text-center md:text-2xl">
           Brace yourselves for an epic lineup of tech visionaries and industry
           leaders at Google I/O Extended Patna! We&apos;re currently fine-tuning
           the final details and preparing to unveil the star-studded roster of
