@@ -29,15 +29,6 @@ export const LeadList = [
 
 const TechTeam = [
   {
-    name: "Shekhar Sahani",
-    desc: "Technical Lead",
-    image: Shekhar,
-    frame: Red,
-    linkedin: "https://www.linkedin.com/in/shekharsahani/",
-    github: "https://github.com/shekhar-sahani",
-    twitter: "https://twitter.com/Shekhar44007302",
-  },
-  {
     name: "Aditya Kumar",
     desc: "Technical Lead",
     image: Aditya,
@@ -47,16 +38,7 @@ const TechTeam = [
     twitter: "https://twitter.com/UNRIVALLED_KING",
   },
 ];
-const OperationTeam = [
-  {
-    name: "Priyanshu Sinha",
-    desc: "Operation Co-Lead",
-    image: Priyanshu,
-    frame: Red,
-    linkedin: "https://www.linkedin.com/in/priyanshusinha03/",
-    twitter: "https://twitter.com/priyanshu0312",
-  },
-];
+const OperationTeam = [];
 const DesignTeam = [
   {
     name: "Hritik Kumar",
