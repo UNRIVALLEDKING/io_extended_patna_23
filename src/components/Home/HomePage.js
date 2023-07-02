@@ -32,8 +32,9 @@ export default function HomePage() {
     return () => clearInterval(interval);
   }, []);
 
-  const monthsLeft = timeBetween.months();
+  // const monthsLeft = timeBetween.months();
   const daysLeft = timeBetween.days();
+  const daysString = String(daysLeft).padStart(2, "0");
   const hoursLeft = timeBetween.hours();
   const minsLeft = timeBetween.minutes();
   const secLeft = timeBetween.seconds();
@@ -61,39 +62,42 @@ export default function HomePage() {
         </div>
         <div className="flex w-full gap-4 flex-col items-center md:flex-row justify-evenly mt-4 px-2 md:px-10">
           <div className="w-full md:w-1/2">
-            <div className="flex gap-4 md:gap-10 md:px-10 flex-row justify-evenly">
-              <div className="w-1/2 h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
-                <div className="border-googleYellow border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                  <p className="text-8xl md:text-[150px]">{monthsLeft}</p>
+            <div className="flex gap-x-4 md:gap-x-10 md:px-10 flex-col justify-evenly">
+              <div className="flex flex-row gap-4 md:gap-10">
+                <div className="w-1/2 h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
+                  <div className="border-googleYellow border-[3px] rounded-[23px] h-full flex items-center justify-center">
+                    <p className="text-8xl md:text-[150px]">{daysString[0]}</p>
+                  </div>
                 </div>
-                <p className="text-center text-2xl md:text-5xl fonft-google mt-3">
-                  Months
-                </p>
-              </div>
-              <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
-                <div className="border-googleRed border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                  <p className="text-8xl md:text-[150px]">{daysLeft}</p>
+                <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
+                  <div className="border-googleRed border-[3px] rounded-[23px] h-full flex items-center justify-center">
+                    <p className="text-8xl md:text-[150px]">{daysString[1]}</p>
+                  </div>
                 </div>
-                <p className="text-center text-2xl md:text-5xl font-google mt-3">
-                  Days
-                </p>
               </div>
+              <p className="text-center text-2xl md:text-5xl font-google mt-3">
+                Days
+              </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 mt-10 md:mt-0">
-            <div className="flex gap-4 md:gap-10 md:px-10 md:flex-row justify-evenly">
-              <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
-                <div className="border-googleBlue border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                  <p className="text-8xl md:text-[150px]">{hoursLeft}</p>
+          <div className="w-full md:w-1/2">
+            <div className="flex gap-x-4 md:gap-x-10 md:px-10 flex-col justify-evenly">
+              <div className="flex flex-row gap-4 md:gap-10">
+                <div className="w-1/2 h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
+                  <div className="border-googleYellow border-[3px] rounded-[23px] h-full flex items-center justify-center">
+                    <p className="text-8xl md:text-[150px]">{minsLeft}</p>
+                  </div>
                 </div>
+                <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
+                  <div className="border-googleRed border-[3px] rounded-[23px] h-full flex items-center justify-center">
+                    <p className="text-8xl md:text-[150px]">{secLeft}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row justify-around">
                 <p className="text-center text-2xl md:text-5xl font-google mt-3">
                   Hours
                 </p>
-              </div>
-              <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
-                <div className="border-googleGreen border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                  <p className="text-8xl md:text-[150px]">{minsLeft}</p>
-                </div>
                 <p className="text-center text-2xl md:text-5xl font-google mt-3">
                   Minutes
                 </p>

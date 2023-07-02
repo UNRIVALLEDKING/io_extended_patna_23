@@ -32,13 +32,31 @@ const TechTeam = [
     name: "Aditya Kumar",
     desc: "Technical Lead",
     image: Aditya,
-    frame: Blue,
+    frame: Red,
     linkedin: "https://www.linkedin.com/in/unrivalledking/",
     github: "https://github.com/UNRIVALLEDKING",
     twitter: "https://twitter.com/UNRIVALLED_KING",
   },
+  {
+    name: "Shekhar Sahani",
+    desc: "Technical Lead",
+    image: Shekhar,
+    frame: Blue,
+    linkedin: "https://www.linkedin.com/in/shekharsahani/",
+    github: "https://github.com/shekhar-sahani",
+    twitter: "https://twitter.com/Shekhar44007302",
+  },
 ];
-const OperationTeam = [];
+const OperationTeam = [
+  {
+    name: "Priyanshu Sinha",
+    desc: "Operation Co-Lead",
+    image: Priyanshu,
+    frame: Red,
+    linkedin: "https://www.linkedin.com/in/priyanshusinha03/",
+    twitter: "https://twitter.com/priyanshu0312",
+  },
+];
 const DesignTeam = [
   {
     name: "Hritik Kumar",
