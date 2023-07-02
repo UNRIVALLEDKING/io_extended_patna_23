@@ -10,7 +10,7 @@ export default function Registrations() {
       md:mt-[150px]
        flex-wrap z-[999999] md:min-h-[50vh] justify-center items-center"
       >
-        <p className="md:w-2/3 w-[90%] text-center md:text-2xl">
+        {/* <p className="md:w-2/3 w-[90%] text-center md:text-2xl">
           Attention tech enthusiasts and innovators! The countdown is on for the
           highly anticipated Google I/O Extended Patna event, and we&apos;re
           thrilled to announce that registration will be opening soon! Get ready
@@ -23,7 +23,19 @@ export default function Registrations() {
           Don&apos;t miss your opportunity to be part of this groundbreaking
           event! 🚀 #GoogleIOExtendedPatna #RegistrationOpeningSoon
           #TechJourneyAwaits
-        </p>
+        </p> */}
+        <iframe
+          id="ts-iframe"
+          src="https://www.townscript.com/v2/widget/gdg-patna-io-extended-2023-442230/booking"
+          frameborder="0"
+          height="600"
+          width="80%"
+          className="text-white bg-transparent"
+        ></iframe>
+        <link
+          rel="stylesheet"
+          href="https://www.townscript.com/static/Bookingflow/css/ts-iframe.style.css"
+        ></link>
       </div>
     </section>
   );

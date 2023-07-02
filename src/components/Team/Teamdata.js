@@ -50,7 +50,7 @@ const TechTeam = [
 const OperationTeam = [
   {
     name: "Priyanshu Sinha",
-    desc: "Operation Co-Lead",
+    desc: "Operation Lead",
     image: Priyanshu,
     frame: Red,
     linkedin: "https://www.linkedin.com/in/priyanshusinha03/",
