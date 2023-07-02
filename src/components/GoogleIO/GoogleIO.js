@@ -13,22 +13,23 @@ export default function GoogleIO() {
     {
       id: 2,
       heading: "Codelabs",
-      para: "Codelabs worth working upon awaits you on the event . Come and acquire some tips and tricks from the speakers . Initiate your journey towards a new technology and get to learn it from experts.",
+      para: "Codelabs worth working upon awaits you at the event. Come and acquire some tips and tricks from the speakers. Initiate your journey towards a new technology and learn it from experts.",
       color: "bg-googleBlue",
     },
     {
       id: 3,
       heading: "Networking",
-      para: "Enlarge your connections by meeting more techy friends like you . In today’s world , your network is your net-worth. Here , GDG brings you an opportunity to interact and connect to like-minded and masters of the tech world.",
+      para: "Expand your connections by meeting more tech enthusiasts like you. In today’s world, your network is your net-worth. Here, GDG brings you an opportunity to interact and connect with like-minded individuals and tech masters.",
       color: "bg-googleGreen",
     },
     {
       id: 4,
-      heading: "Swags & Refreshments",
-      para: "A long conference with empty stomach is just not fun! GDG Patna is making sure that your visit will surely leave a taste of this historic city on your mind. As a souvenir for our great journey, you'll also be getting some cool goodies and google badges.",
+      heading: "Valuable Workshops",
+      para: "Participate in valuable workshops conducted by industry experts, where you can gain hands-on experience and practical insights into cutting-edge technologies. These workshops will equip you with the skills and knowledge needed to tackle real-world challenges and take your projects to the next level.",
       color: "bg-googleYellow",
     },
   ];
+
   return (
     <section id="google-io" className="text-center py-7">
       <h2 className="text-3xl my-3">What is Google IO Extended ?</h2>
