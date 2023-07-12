@@ -22,7 +22,7 @@ export default function Speakers() {
       md:mt-[150px]
        flex-wrap z-[999999] md:min-h-[50vh] justify-center items-center"
       >
-        {/* {speakersData.map((item, id) => (
+        {speakersData.map((item, id) => (
           <div className="w-full md:w-1/4 py-4 md:py-10 z-[999999]" key={id}>
             <div className="flex flex-row items-start my-10 justify-center">
               <div className={`w-2/3 bg-transparent text-center relative`}>
@@ -33,7 +33,7 @@ export default function Speakers() {
                   className={`${item.color} -translate-y-[30%] p-2 rounded-t-full rounded-b-full pb-10 md:pb-24 min-h-[50vh] md:min-h-[40vh]`}
                 >
                   <Image
-                    src={team1}
+                    src={item.image}
                     alt="io extended"
                     className="w-full rounded-full aspect-square border-black border-2 object-cover"
                   />
@@ -72,9 +72,9 @@ export default function Speakers() {
               </div>
             </div>
           </div>
-        ))} */}
+        ))}
 
-        <p className="md:w-2/3 w-[90%] text-center md:text-2xl">
+        {/* <p className="md:w-2/3 w-[90%] text-center md:text-2xl">
           Brace yourselves for an epic lineup of tech visionaries and industry
           leaders at Google I/O Extended Patna! We&apos;re currently fine-tuning
           the final details and preparing to unveil the star-studded roster of
@@ -84,7 +84,7 @@ export default function Speakers() {
           for an unforgettable experience that will ignite your passion for all
           things tech. It&apos;s time to level up! 💫 #GoogleIOExtendedPatna
           #SpeakersRevealComingSoon #TechEnthusiastsUnite
-        </p>
+        </p> */}
       </div>
     </section>
   );

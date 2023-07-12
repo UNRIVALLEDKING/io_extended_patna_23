@@ -5,6 +5,8 @@ import Shekhar from "./Shekhar.jpeg";
 import Hritik from "./Hritik.jpeg";
 import Priyanshu from "./Priyanshu.jpeg";
 import AdityaDesign from "./AdityaDesign.jpeg";
+import AnubhavSingh from "./AnubhavSingh.jpeg";
+import RajeshRanjan from "./RajeshRanjan.jpeg";
 import Shruti from "./Shruti.jpg";
 
 export {
@@ -16,4 +18,6 @@ export {
   Priyanshu,
   AdityaDesign,
   Shruti,
+  AnubhavSingh,
+  RajeshRanjan,
 };

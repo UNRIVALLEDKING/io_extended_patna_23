@@ -27,7 +27,6 @@ export default function Registrations() {
         <iframe
           id="ts-iframe"
           src="https://www.townscript.com/v2/widget/gdg-patna-io-extended-2023-442230/booking"
-          frameborder="0"
           height="600"
           width="80%"
           className="text-white bg-transparent"
