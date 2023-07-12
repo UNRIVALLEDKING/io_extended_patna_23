@@ -19,11 +19,14 @@ export default function Speakers() {
       </div>
       <div
         className="flex flex-row 
-      md:mt-[150px]
+     mt-[120px]
        flex-wrap z-[999999] md:min-h-[50vh] justify-center items-center"
       >
         {speakersData.map((item, id) => (
-          <div className="w-full md:w-1/4 py-4 md:py-10 z-[999999]" key={id}>
+          <div
+            className="w-full mt-5 md:mt-0 md:w-1/4 py-4 md:py-10 z-[999999]"
+            key={id}
+          >
             <div className="flex flex-row items-start my-10 justify-center">
               <div className={`w-2/3 bg-transparent text-center relative`}>
                 <div className="w-[105%] -translate-x-[2.5%] absolute bottom-6">
