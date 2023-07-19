@@ -14,6 +14,7 @@ const speakersData = [
     insta: "https://www.instagram.com/xprilion/",
     linkedin: "https://www.linkedin.com/in/xprilion/",
     twitter: "https://twitter.com/xprilion",
+    web: "https://xprilion.com/",
     color: "bg-googleBlue",
   },
   {
@@ -31,6 +32,7 @@ const speakersData = [
     team: "Google Developer Expert, Firebase & Web",
     linkedin: "https://www.linkedin.com/in/vrijrajsingh/",
     twitter: "https://twitter.com/SVrijraj",
+    web: "https://vrijraj.xyz/",
     color: "bg-googleGreen",
   },
   {
@@ -40,6 +42,7 @@ const speakersData = [
     team: "Software Engineer",
     linkedin: "https://www.linkedin.com/in/surajsuggasingh/",
     twitter: "https://twitter.com/SurajSugga",
+    web: "https://howdysuraj.web.app/",
     color: "bg-googleYellow",
   },
 ];

@@ -1,4 +1,4 @@
-import { instaIcon, linkedinIcon, twitterIcon } from "@/Assets/SNS";
+import { instaIcon, linkedinIcon, twitterIcon, webIcon } from "@/Assets/SNS";
 import { Bg1, Bg2, TeamTri, team1 } from "@/Assets/team";
 import Image from "next/image";
 import { speakersData } from "./SpeakersData";
@@ -80,6 +80,21 @@ export default function Speakers() {
                       >
                         <Image
                           src={twitterIcon}
+                          className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
+                          alt="io extended"
+                        />
+                      </a>
+                    </div>
+                  </>
+                ) : (
+                  <></>
+                )}
+                {item.web ? (
+                  <>
+                    <div className="border-white rounded-full p-3 border-2">
+                      <a href={item.web} target="_blank" className="w-[50px]">
+                        <Image
+                          src={webIcon}
                           className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
                           alt="io extended"
                         />
