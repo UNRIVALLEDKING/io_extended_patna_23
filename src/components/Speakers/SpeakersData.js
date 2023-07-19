@@ -1,4 +1,9 @@
-import { AnubhavSingh, RajeshRanjan } from "@/Assets/TeamMembers";
+import {
+  AnubhavSingh,
+  RajeshRanjan,
+  surajKumar,
+  vrijrajSingh,
+} from "@/Assets/TeamMembers";
 
 const speakersData = [
   {
@@ -18,6 +23,24 @@ const speakersData = [
     team: "Co Founder, O2 Angels Network",
     linkedin: "https://www.linkedin.com/in/rraajjeesshhr/",
     color: "bg-googleRed",
+  },
+  {
+    id: 1,
+    name: "Vrijraj Singh",
+    image: vrijrajSingh,
+    team: "Google Developer Expert, Firebase & Web",
+    linkedin: "https://www.linkedin.com/in/vrijrajsingh/",
+    twitter: "https://twitter.com/SVrijraj",
+    color: "bg-googleGreen",
+  },
+  {
+    id: 1,
+    name: "Suraj Kumar",
+    image: surajKumar,
+    team: "Software Engineer",
+    linkedin: "https://www.linkedin.com/in/surajsuggasingh/",
+    twitter: "https://twitter.com/SurajSugga",
+    color: "bg-googleYellow",
   },
 ];
 

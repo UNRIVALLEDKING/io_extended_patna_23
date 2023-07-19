@@ -54,24 +54,41 @@ export default function Speakers() {
                     />
                   </a>
                 </div>
-                <div className="border-white rounded-full p-3 border-2">
-                  <a href={item.linkedin} target="_blank" className="w-[50px]">
-                    <Image
-                      src={instaIcon}
-                      className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
-                      alt="io extended"
-                    />
-                  </a>
-                </div>
-                <div className="border-white rounded-full p-3 border-2">
-                  <a href={item.linkedin} target="_blank" className="w-[50px]">
-                    <Image
-                      src={twitterIcon}
-                      className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
-                      alt="io extended"
-                    />
-                  </a>
-                </div>
+                {item.insta ? (
+                  <>
+                    <div className="border-white rounded-full p-3 border-2">
+                      <a href={item.insta} target="_blank" className="w-[50px]">
+                        <Image
+                          src={instaIcon}
+                          className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
+                          alt="io extended"
+                        />
+                      </a>
+                    </div>
+                  </>
+                ) : (
+                  <></>
+                )}
+
+                {item.twitter ? (
+                  <>
+                    <div className="border-white rounded-full p-3 border-2">
+                      <a
+                        href={item.twitter}
+                        target="_blank"
+                        className="w-[50px]"
+                      >
+                        <Image
+                          src={twitterIcon}
+                          className="w-[15px] md:w-[20px] aspect-sqaure h-auto m-auto"
+                          alt="io extended"
+                        />
+                      </a>
+                    </div>
+                  </>
+                ) : (
+                  <></>
+                )}
               </div>
             </div>
           </div>
