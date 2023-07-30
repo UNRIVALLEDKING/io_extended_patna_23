@@ -14,7 +14,7 @@ export default function Home() {
       <Speakers />
       <Sponsors />
       <CommunityPartners />
-      <Registrations />
+      {/* <Registrations /> */}
       <FAQ />
     </main>
   );

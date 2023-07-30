@@ -67,12 +67,12 @@ export default function HomePage() {
               <div className="flex flex-row gap-4 md:gap-10">
                 <div className="w-1/2 h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
                   <div className="border-googleYellow border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                    <p className="text-8xl md:text-[150px]">{hoursString[0]}</p>
+                    <p className="text-8xl md:text-[150px]">00</p>
                   </div>
                 </div>
                 <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
                   <div className="border-googleRed border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                    <p className="text-8xl md:text-[150px]">{hoursString[1]}</p>
+                    <p className="text-8xl md:text-[150px]">00</p>
                   </div>
                 </div>
               </div>
@@ -86,12 +86,12 @@ export default function HomePage() {
               <div className="flex flex-row gap-4 md:gap-10">
                 <div className="w-1/2 h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
                   <div className="border-googleYellow border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                    <p className="text-8xl md:text-[150px]">{minsLeft}</p>
+                    <p className="text-8xl md:text-[150px]">00</p>
                   </div>
                 </div>
                 <div className="w-1/2  h-52 md:h-48 border-white border-[3px] rounded-[23px] p-2">
                   <div className="border-googleRed border-[3px] rounded-[23px] h-full flex items-center justify-center">
-                    <p className="text-8xl md:text-[150px]">{secLeft}</p>
+                    <p className="text-8xl md:text-[150px]">00</p>
                   </div>
                 </div>
               </div>
