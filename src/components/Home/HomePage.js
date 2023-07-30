@@ -121,8 +121,11 @@ export default function HomePage() {
             onClick={handleScroll}
             className="registerButton px-8 py-3 md:mt-0"
           >
-            <Link href="#register" className="text-2xl md:text-4xl">
-              Register
+            <Link
+              href="https://gdgpatna.com/gallery"
+              className="text-2xl md:text-4xl"
+            >
+              Gallery
             </Link>
           </button>
         </div>
